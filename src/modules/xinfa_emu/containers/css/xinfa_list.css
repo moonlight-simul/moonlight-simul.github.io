@@ -1,0 +1,86 @@
+.xinfa-list-wrapper {
+    width: 100%;
+}
+
+
+.xinfa-card {
+    background: url(../../assets/imgs/ui/xinfa_border.png);
+    font-size: 16px;
+    position: relative;
+    margin: 2px;
+    padding: 0;
+    border: none;
+}
+
+.xinfa-list {
+    text-align: center;
+    width: 100%;
+    height: 360px;
+    overflow: inherit;
+}
+
+.xinfa-list-item {
+    display: inline-block;
+    width: 110px;
+    height: 159px;
+    text-align: center;
+    background: url(../../assets/imgs/ui/xinfa_border.png);
+    font-size: 16px;
+    position: relative;
+    margin: 2px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.xinfa-list-item:hover img {
+    border: 1px solid #fff;
+}
+
+.xinfa-img {
+    position: absolute;
+    border: 1px transparent;
+    width: 45px;
+    height: 45px;
+    top: 29px;
+    left: 34px;
+}
+
+.xinfa-name {
+    width: 100%;
+    color: #FFF;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 90px;
+}
+
+.xinfa-level {
+    width: 100%;
+    color: #FFF;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 110px;
+}
+
+.xinfa-placement {
+    width: 100%;
+    color: #FFF;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 128px;
+}
+
+.select-slot-dropdown-menu {
+    background: #0e3049;
+    min-width: auto;
+}
+
+.select-slot-dropdown-menu li a {
+    color: #fff;
+    padding: 2px 20px;
+}
