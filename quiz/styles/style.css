@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  border: .25rem solid rgb(0,0,0);
+}
+body {
+  background-color: rgb(230, 230, 230);
+  background-attachment: fixed;
+  background-image: url(https://i.imgur.com/NiWsQTW.png);
+  background-repeat: no-repeat; 
+  background-position: right bottom; 
+	font: bold 10px/1.5 Helvetica, Arial, sans-serif;
+	letter-spacing: .1rem;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.result_quiz {
+  background-color: rgb(172, 225, 249);
+  margin-top: 1.5rem;
+}
+
+.result_answer {
+  text-indent: 1rem;
+  background-color:#e6e6e6
+}
+
+.result_quiz, .result_answer {
+  font-size: 1rem;
+  padding: .25rem;
+}
+
+#searchform {
+  font-size: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+#search_term{
+width:300px; height:60px;
+border:none;
+padding:15px;
+font-size:16px;
+color:#aaa;
+      }
