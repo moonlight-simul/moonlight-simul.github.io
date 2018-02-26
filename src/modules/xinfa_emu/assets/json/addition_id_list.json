@@ -1,7 +1,0 @@
-[
-  {"btnTitle": "지난논검칭호", "dataId": "lastSeason1v1", "stateId": "lastSeason1v1Level"},
-  {"btnTitle": "논검칭호", "dataId": "currentSeason1v1", "stateId": "currentSeason1v1Level"},
-  {"btnTitle": "맹회직위", "dataId": "menghui", "stateId": "menghuiLevel"},
-  {"btnTitle": "팔황순위", "dataId": "jiandang", "stateId": "jiandangLevel"},
-  {"btnTitle": "문파순위", "dataId": "dadizi", "stateId": "dadiziLevel"}
-]
