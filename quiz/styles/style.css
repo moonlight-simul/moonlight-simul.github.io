@@ -49,3 +49,23 @@ padding:15px;
 font-size:16px;
 color:#aaa;
       }
+#container {
+  width: 100%;
+}
+#header {
+  float: left;
+  width: 100%;
+  height: 230px;
+  text-align:center;
+}
+#head {
+  float: left;  
+  width: 100%;
+  height: 133px;  
+}
+#content {
+  float: left;  
+  text-align:center;
+  width: 100%;
+  height:50px;
+}
