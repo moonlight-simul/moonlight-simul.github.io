@@ -5,17 +5,45 @@
 		<title>천애명월도 퀴즈 족보</title>
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
 	</head>
 
 	<body>	
-	  <div id="container">
-	    <div id="head">
-      <a href="/">취걸개 Tools</a>
-	  <a href="/xinfa">심법 계산기</a>
-      <a href="/quiz">문답족보</a>
-	  <a href="http://rostory.net/4447">게임시계</a>
-         </div>
-    </div>
+	 <ul>
+  <li><a href="/">취걸개Tools</a></li>
+  <li><a href="/xinfa">심법계산기</a></li>
+  <li><a href="/quiz">문답족보</a></li>
+  <li><a href="http://rostory.net/4447" target="_blank">게임시계</a></li>
+  <li style="float:right"><a class="active" href="http://rostory.net" target="_blank">로스트</a></li>
+</ul>
 
 				<center><img src="https://i.imgur.com/0TLWKA3.png" style="max-width: 100%"></center>
 		
