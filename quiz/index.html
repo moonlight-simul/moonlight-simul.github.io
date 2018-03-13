@@ -4,22 +4,7 @@
 		<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 		<title>천애명월도 퀴즈 족보</title>
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script language="Javascript"> 
-<!-- 
-function setCookie( name, value, expiredays ) { 
-    var todayDate = new Date(); 
-        todayDate.setDate( todayDate.getDate() + expiredays ); 
-        document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
-    }
-function closeWin() { 
-    if ( document.notice_form.chkbox.checked ){ 
-        setCookie( "maindiv", "done" , 1 ); 
-    } 
-    document.all['divpop'].style.visibility = "hidden"; 
-} 
-//-->  
-</script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>		
 		<style>
 ul {
     list-style-type: none;
@@ -72,32 +57,6 @@ li a:hover:not(.active) {
 
 		<div id="search_results"></div>
 
-		<script src="scripts/main.js"></script>
-		<!-- POPUP --> 
-<div id="divpop" style="position:absolute;left:10px;top:10px;z-index:200;visibility:hidden;"> 
-<table width=293 height=213 cellpadding=2 cellspacing=0> 
-<tr> 
-    <td style="border:1px #666666 solid" height=213 align=center bgcolor=white> 
-	    <a href="https://www.youtube.com/channel/UCP3_dVCFIzL0UDk9jLq1oBg/featured?sub_confirmation=1" target="_blank"><img src="https://i.imgur.com/l6G7j6N.png"></a>    </td> 
-</tr> 
-<tr> 
-        <form name="notice_form"> 
-    <td align=right bgcolor=white> 
-        <input type="checkbox" name="chkbox" value="checkbox">오늘 하루 열지 않음 
-        <a href="javascript:closeWin();"><B>[닫기]</B></a> 
-    </td> 
-</tr> 
-        </form> 
-</table> 
-</div> 
-<script language="Javascript"> 
-cookiedata = document.cookie;    
-if ( cookiedata.indexOf("maindiv=done") < 0 ){      
-    document.all['divpop'].style.visibility = "visible"; 
-    } 
-    else { 
-        document.all['divpop'].style.visibility = "hidden"; 
-} 
-</script>
+		<script src="scripts/main.js"></script>		
 	</body>
 </html>
