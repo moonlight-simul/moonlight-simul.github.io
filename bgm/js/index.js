@@ -740,6 +740,14 @@ $(document).ready(function() {
       'file': 'Login_Main.wav'
     },{
       'icon': iconImage,
+      'title': 'Main Theme - Character',
+      'file': 'login_character.wav'
+    },{
+      'icon': iconImage,
+      'title': '견문 "연정 - 지지않는 달" 상란의 노래',
+      'file': '24yisiyue.mp3'
+    },{
+      'icon': iconImage,
       'title': '항주 Theme - Intro_Day',
       'file': 'http://rostools.net/bgm/HZ_Intro_Day.wav'
     }, {
@@ -770,6 +778,14 @@ $(document).ready(function() {
       'icon': iconImage,
       'title': '항주 Theme - Day3',
       'file': 'http://rostools.net/bgm/HZ_BGM6.wav'
+    }, {
+      'icon': iconImage,
+      'title': '형호 Theme - Main',
+      'file': 'GaiBang_Day.wav'
+    }, {
+      'icon': iconImage,
+      'title': '형호 Theme - 논검장',
+      'file': 'XunYou_GB.wav'
     }]
   });
 
