@@ -12,6 +12,20 @@
 <link rel='stylesheet prefetch' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
+</script>	
+<script type="text/javascript">
+function keydowncheck()
+{
+var result = true;
+var keycode = event.keyCode;
+if(123 == keycode) //F12 키코드
+{
+result = false;
+}
+return result;
+}
+</script>
+<script language=JavaScript>function click() {if ((event.button==2) || (event.button==2)) {alert('취걸개 플레이어 v1!!');}}document.onmousedown=click// --></script>
 
   
 </head>
@@ -180,7 +194,11 @@
 
     <script  src="js/index.js"></script>
 
-
+<script language="JavaScript">
+				$(window.document).ready(function(){
+  	$(window.document).on("contextmenu", function(event){return false;});	//우클릭방지
+});
+</script>
 
 
 </body>
