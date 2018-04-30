@@ -736,6 +736,10 @@ $(document).ready(function() {
   AP.init({
     playList: [{
       'icon': iconImage,
+      'title': 'Main Theme - Login',
+      'file': 'Login_Main.wav'
+    },{
+      'icon': iconImage,
       'title': '항주 Theme - Intro_Day',
       'file': 'http://rostools.net/bgm/HZ_Intro_Day.wav'
     }, {
