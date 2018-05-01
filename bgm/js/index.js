@@ -737,55 +737,171 @@ $(document).ready(function() {
     playList: [{
       'icon': iconImage,
       'title': 'Main Theme - Login',
-      'file': 'Login_Main.wav'
+      'file': 'Login_Main.ogg'
     },{
       'icon': iconImage,
       'title': 'Main Theme - Character',
-      'file': 'login_character.wav'
+      'file': 'login_character.ogg'
     },{
       'icon': iconImage,
-      'title': '견문 "연정 - 지지않는 달" 상란의 노래',
-      'file': '24yisiyue.mp3'
+      'title': 'Main Theme - 천애명월도',
+      'file': 'TianYaMusic.ogg'
+    },{
+      'icon': iconImage,
+      'title': 'Main Theme - 견문 "연정-지지않는 달" 상란의 노래',
+      'file': '24yisiyue.ogg'
     },{
       'icon': iconImage,
       'title': '항주 Theme - Intro_Day',
-      'file': 'http://rostools.net/bgm/HZ_Intro_Day.wav'
+      'file': 'HZ_Intro_Day.ogg'
     }, {
       'icon': iconImage,
       'title': '항주 Theme - Intro_Night',
-      'file': 'http://rostools.net/bgm/HZ_Intro_Night.wav'
+      'file': 'HZ_Intro_Night.ogg'
     }, {
       'icon': iconImage,
       'title': '항주 Theme - Night1',
-      'file': 'http://rostools.net/bgm/HZ%20Night-BGM1.wav'
+      'file': 'HZ%20Night-BGM1.ogg'
     }, {
       'icon': iconImage,
       'title': '항주 Theme - Night2',
-      'file': 'http://rostools.net/bgm/HZ%20Night-BGM2.wav'
+      'file': 'HZ%20Night-BGM2.ogg'
     }, {
       'icon': iconImage,
       'title': '항주 Theme - Night3',
-      'file': 'http://rostools.net/bgm/HZ%20Night-BGM3.wav'
+      'file': 'HZ%20Night-BGM3.ogg'
     }, {
       'icon': iconImage,
       'title': '항주 Theme - Day1',
-      'file': 'http://rostools.net/bgm/HZ_BGM4.wav'
+      'file': 'HZ_BGM4.ogg'
     }, {
       'icon': iconImage,
       'title': '항주 Theme - Day2',
-      'file': 'http://rostools.net/bgm/HZ_BGM5.wav'
+      'file': 'HZ_BGM5.ogg'
     }, {
       'icon': iconImage,
       'title': '항주 Theme - Day3',
-      'file': 'http://rostools.net/bgm/HZ_BGM6.wav'
+      'file': 'HZ_BGM6.ogg'
     }, {
       'icon': iconImage,
       'title': '형호 Theme - Main',
-      'file': 'GaiBang_Day.wav'
+      'file': 'GaiBang_Day.ogg'
     }, {
       'icon': iconImage,
-      'title': '형호 Theme - 논검장',
-      'file': 'XunYou_GB.wav'
+      'title': '진천 Theme - Main',
+      'file': 'TaiBai_Day.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '연운 Theme - Main',
+      'file': 'ShenWei_Day.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '파촉 Theme - Main',
+      'file': 'TangMen_Day.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '동월 Theme - Main',
+      'file': 'DY_Tianxiang_Intro.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '양주 Theme - Main',
+      'file': 'ZhenWu_Day.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '운전 Theme - Intro',
+      'file': 'WD_intro.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '운전 Theme - Night 01',
+      'file': 'WD_BGM_night_01.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '운전 Theme - Night 02',
+      'file': 'WD_BGM_night_02.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '운전 Theme - BGM 01',
+      'file': 'WD_BGM_01.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '운전 Theme - BGM 02',
+      'file': 'WD_BGM_02.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '서해 Theme - Intro Day',
+      'file': 'SD_Intro_Day.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '서해 Theme - Intro Night',
+      'file': 'SD_Intro_Night.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '서해 Theme - Day 01',
+      'file': 'SD_BGM_Day_01.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '서해 Theme - Day 02',
+      'file': 'SD_BGM_Day_02.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '서해 Theme - Day 03',
+      'file': 'SD_BGM_Day_03.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '서해 Theme - Night 01',
+      'file': 'SD_BGM_Night_01.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '서해 Theme - Night 02',
+      'file': 'SD_BGM_Night_02.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '서해 Theme - Night 03',
+      'file': 'SD_BGM_Night_03.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '창오성 Theme - Boss Battle Mixdown',
+      'file': 'CWC_battle_boss Mixdown.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '창오성 Theme - Boss Battle loop',
+      'file': 'CWC_boss_XSW_loop.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '논검장 Theme - 창오성',
+      'file': 'XunYou_CangWuCheng.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '논검장 Theme - 형호',
+      'file': 'XunYou_GB.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '논검장 Theme - 연운',
+      'file': 'XunYou_SW.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '논검장 Theme - 진천',
+      'file': 'XunYou_TB.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '논검장 Theme - 파촉',
+      'file': 'XunYou_TM.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '논검장 Theme - 동월',
+      'file': 'XunYou_TX.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '논검장 Theme - 운전',
+      'file': 'XunYou_WD.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '논검장 Theme - 양주',
+      'file': 'XunYou_ZW.ogg'
+    }, {
+      'icon': iconImage,
+      'title': '논검장 Theme - 서해',
+      'file': 'XunYou_SD.ogg'
     }]
   });
 
@@ -801,7 +917,7 @@ $(document).ready(function() {
     $('.back_btn').on('click', function() {
       $('.player_playlist').toggleClass('playlist_on');
       $('.glyphicon-menu-left').toggleClass('back_btn_on');
-      $('.waves').toggleClass('waves_up');
+      $('.ogges').toggleClass('waves_up');
       $('.album_wrap').toggleClass('album_up');
       $('.song_playing').toggleClass('song_playing_up');
       $('.timeline_wrap').toggleClass('timeline_wrap_up');
