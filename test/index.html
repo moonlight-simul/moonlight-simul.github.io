@@ -31,208 +31,16 @@
 	<!-- Fixes and mobile -->
 	<link href="css/bootstrap-fixes.css" rel="stylesheet">
 
-	<!-- jQuery -->
-	<script src="js/jquery-3.1.1.js"></script>
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/jquery.bracket.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	
-<script>
-		jQuery(document).ready(function() {
-
-		var KnockOutData = [
-		    [
-		        [
-		            {
-		                "name": "테스트1",
-		                "id": "8",
-		                "url": "#",
-		                "score": 81,
-		                "seed": 1
-		            },
-		            {
-		                "name": "테스트2",
-		                "id": "6",
-		                "url": "#",
-		                "score": 94,
-		                "seed": 2
-		            }
-		        ]
-		    ],
-		    [
-		        [
-		            {
-		                "name": "g0dspeed",
-		                "id": "6",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-4/",
-		                "score": 59,
-		                "seed": 2
-		            },
-		            {
-		                "name": "BurntRaw",
-		                "id": "2",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-4/",
-		                "score": 72,
-		                "seed": 3
-		            }
-		        ],
-		        [
-		            {
-		                "name": "FoxSlay",
-		                "id": "5",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2/",
-		                "score": 132,
-		                "seed": 4
-		            },
-		            {
-		                "name": "Pyrotek",
-		                "id": "9",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2/",
-		                "score": 112,
-		                "seed": 5
-		            }
-		        ],
-		        [
-		            {
-		                "name": "Raaaa",
-		                "id": "10",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-2/",
-		                "score": 105,
-		                "seed": 6
-		            },
-		            {
-		                "name": "HotShot",
-		                "id": "7",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-2/",
-		                "score": 108,
-		                "seed": 7
-		            }
-		        ],
-		        [
-		            {
-		                "name": "Energet",
-		                "id": "4",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-3/",
-		                "score": 144,
-		                "seed": 8
-		            },
-		            {
-		                "name": "Swagson",
-		                "id": "11",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-3/",
-		                "score": 121,
-		                "seed": 9
-		            }
-		        ]
-		    ],
-		    [
-		        [
-		            {
-		                "name": "BurntRaw",
-		                "id": "2",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-3-2/",
-		                "score": 172,
-		                "seed": 3
-		            },
-		            {
-		                "name": "FoxSlay",
-		                "id": "5",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-3-2/",
-		                "score": 153,
-		                "seed": 4
-		            }
-		        ],
-		        [
-		            {
-		                "name": "HotShot",
-		                "id": "7",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-3/",
-		                "score": 189,
-		                "seed": 7
-		            },
-		            {
-		                "name": "Energet",
-		                "id": "4",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-3/",
-		                "score": 211,
-		                "seed": 8
-		            }
-		        ]
-		    ],
-		    [
-		        [
-		            {
-		                "name": "BurntRaw",
-		                "id": "2",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-4/",
-		                "score": 123,
-		                "seed": 3
-		            },
-		            {
-		                "name": "Energet",
-		                "id": "4",
-		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-4/",
-		                "score": 116,
-		                "seed": 8
-		            }
-		        ]
-		    ],
-		    [
-		        [
-		            {
-		                "name": "BurntRaw",
-		                "id": "2",
-		                "seed": 3
-		            }
-		        ]
-		    ]
-		];
-           jQuery("#thebracket").gracket({ src : KnockOutData, canvasLineColor: "#fff", canvasLineWidth: 2, canvasId : "g_canvas", canvasClass : "g_canvas" });
-           jQuery(".g_game").on("click", function(e) {
-				var hasurl = "";
-				jQuery(this).children().each(function (index) {
-					jQuery(this).children().each(function (index) {
-						var tempurl = jQuery(this).data("url");
-						if (tempurl !== undefined) {
-							hasurl = tempurl;
-						}
-					});
-				});
-				if (hasurl.length > 1) {
-					var win = window.open(hasurl, "_blank");
-				}
-		   });
-
-            var childz = jQuery("#thebracket");
-            var parentz = jQuery("#knockout_holder");
-            var parentPos = parentz.offset();
-            var childPos = childz.offset();
-
-
-            jQuery( "#thebracket" ).draggable({
-                drag: function(event, ui) {
-
-                     if (ui.position.top > 0) {
-                            ui.position.top = 0;
-                      }
-                      if (ui.position.top < 0) {
-                            ui.position.top = 0;
-                      }
-
-                      if (ui.position.left < (parentz.width() - childz.width())) {
-                          ui.position.left= parentz.width() - childz.width();
-                      }
-                       if (ui.position.left > 0) {
-                            ui.position.left= 0;
-                      }
-
-
-                  },
-
-                scroll: false });
-        });
+	<script>
+		var SkipFirst = 0;
 	</script>
-
+	
+	<!-- main lib -->
+	<script type="text/javascript" src="js/jquery.gracket.min.js"></script>
+	<script type="text/javascript" src="js/test.js"></script>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -242,6 +50,7 @@
 	<![endif]-->
 
 </head>
+
 <body class="single-match-page">
 
 	<!-- top header -->
@@ -291,7 +100,7 @@
 						<a href="#"><img src="images/as-210x178.jpg"></a>
 						<div class="team-result"><span>1</span></div>
 					</div>
-					<a href="#" class="team-title"><span>유어즈</span></a>
+					<a href="#" class="team-title"><span>WE(서니아)</span></a>
 					<div class="clearfix"></div>
 				</div>
 				<span class="versus">vs</span>
@@ -300,7 +109,7 @@
 						<a href="#"><img src="images/Avatar_Large-210x178.png"></a>
 						<div class="team-result"><span>1</span></div>
 					</div>
-					<a href="#" class="team-title"><span>ㅇㅅㅇㄱ</span></a>
+					<a href="#" class="team-title"><span>비뉴</span></a>
 				</div>
 				<div class="tournament-meta">
 					<div class="tournament-info">
@@ -329,7 +138,7 @@
 				<div class="main-content-title">
 					<h3><i class="fa fa-bullhorn"></i> 승부예측</h3>
 				</div>
-					<div>
+				<div>
 <iframe src="http://rostory.net/%EC%8A%B9%EB%B6%80%EC%98%88%EC%B8%A1" frameborder="0" width="630" height="320" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
 			</div>
 
@@ -343,8 +152,8 @@
 					<li>
 						<strong>형호 논검장</strong>
 						<div class="score">
-							<span>2회전 W ㅇㅅㅇㄱ</span>
-							<span>1회전 W 유어즈</span>
+							<span>2회전 W 비뉴</span>
+							<span>1회전 W We(서니아)</span>
 						</div>
 						<div class="clearfix"></div>
 					</li>
@@ -356,9 +165,9 @@
 				</div>
 
 				<div><script async src="//client.uchat.io/uchat.js"></script>
-<u-chat room='moonlight' style="display:inline-block; width:630px; height:600px;"></u-chat></div>
-			</div>
+<u-chat room='moonlight' style="display:inline-block; width:630px; height:450px;"></u-chat></div>
 
+			</div>
 				<div class="tournament-prize">
 				<h2>우승자 보상</h2>
 				<table cellpadding="0" cellspacing="0" id="prizes-table">
@@ -383,12 +192,11 @@
 				</table>
 			</div>
 
+<div class="my_gracket"></div>
 
-			<div id="knockout_holder"><div id="thebracket" class="draggable"></div></div>
-			<div class="clear"></div>
 
 		</div>
-		
+
 	</section>
 	
 
@@ -419,4 +227,44 @@
 	});
 </script>
 
+	<script type="text/javascript">
+		(function(win, doc, $){
+			
+			console.warn("Make sure the min-width of the .gracket_h3 element is set to width of the largest name/player. Gracket needs to build its canvas based on the width of the largest element. We do this my giving it a min width. I'd like to change that!");
+
+			// Fake Data
+			win.TestData = [
+				[
+					[ {"name" : "Erik Zettersten", "id" : "erik-zettersten", "seed" : 1, "displaySeed": "D1", "score" : 47 }, {"name" : "Andrew Miller", "id" : "andrew-miller", "seed" : 2} ],
+					[ {"name" : "James Coutry", "id" : "james-coutry", "seed" : 3}, {"name" : "Sam Merrill", "id" : "sam-merrill", "seed" : 4}],
+					[ {"name" : "Anothy Hopkins", "id" : "anthony-hopkins", "seed" : 5}, {"name" : "Everett Zettersten", "id" : "everett-zettersten", "seed" : 6} ],
+					[ {"name" : "John Scott", "id" : "john-scott", "seed" : 7}, {"name" : "Teddy Koufus", "id" : "teddy-koufus", "seed" : 8}],
+					[ {"name" : "Arnold Palmer", "id" : "arnold-palmer", "seed" : 9}, {"name" : "Ryan Anderson", "id" : "ryan-anderson", "seed" : 10} ],
+					[ {"name" : "Jesse James", "id" : "jesse-james", "seed" : 1}, {"name" : "Scott Anderson", "id" : "scott-anderson", "seed" : 12}],
+					[ {"name" : "Josh Groben", "id" : "josh-groben", "seed" : 13}, {"name" : "Sammy Zettersten", "id" : "sammy-zettersten", "seed" : 14} ],
+					[ {"name" : "Jake Coutry", "id" : "jake-coutry", "seed" : 15}, {"name" : "Spencer Zettersten", "id" : "spencer-zettersten", "seed" : 16}]
+				], 
+				[
+					[ {"name" : "Erik Zettersten", "id" : "erik-zettersten", "seed" : 1}, {"name" : "James Coutry", "id" : "james-coutry", "seed" : 3} ],
+					[ {"name" : "Anothy Hopkins", "id" : "anthony-hopkins", "seed" : 5}, {"name" : "Teddy Koufus", "id" : "teddy-koufus", "seed" : 8} ],
+					[ {"name" : "Ryan Anderson", "id" : "ryan-anderson", "seed" : 10}, {"name" : "Scott Anderson", "id" : "scott-anderson", "seed" : 12} ],
+					[ {"name" : "Sammy Zettersten", "id" : "sammy-zettersten", "seed" : 14}, {"name" : "Jake Coutry", "id" : "jake-coutry", "seed" : 15} ]
+				],
+				[
+					[ {"name" : "Erik Zettersten", "id" : "erik-zettersten", "seed" : 1}, {"name" : "Anothy Hopkins", "id" : "anthony-hopkins", "seed" : 5} ],
+					[ {"name" : "Ryan Anderson", "id" : "ryan-anderson", "seed" : 10}, {"name" : "Sammy Zettersten", "id" : "sammy-zettersten", "seed" : 14} ]
+				],
+				[
+					[ {"name" : "Erik Zettersten", "id" : "erik-zettersten", "seed" : 1}, {"name" : "Ryan Anderson", "id" : "ryan-anderson", "seed" : 10} ]
+				],
+				[
+					[ {"name" : "Erik Zettersten", "id" : "erik-zettersten", "seed" : 1} ]
+				]
+			];
+
+			// initializer
+			$(".my_gracket").gracket({ src : win.TestData });
+
+		})(window, document, jQuery);
+	</script>
 </html>
