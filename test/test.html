@@ -1,0 +1,1482 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="keywords" content="HTML5 Template" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Single tournament | Arcane </title>
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+
+	<!-- Bootstrap Core CSS, FontAwesome, Fonts -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Fixes and mobile -->
+	<link href="css/bootstrap-fixes.css" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script>
+		var SkipFirst = 0;
+	</script>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/jquery.bracket.min.js"></script>
+	<script src="js/mobile.drag.ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		jQuery(document).ready(function() {
+
+		var KnockOutData = [
+		    [
+		        [
+		            {
+		                "name": "Kyōsuke",
+		                "id": "8",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-1/",
+		                "score": 81,
+		                "seed": 1
+		            },
+		            {
+		                "name": "g0dspeed",
+		                "id": "6",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-1/",
+		                "score": 94,
+		                "seed": 2
+		            }
+		        ]
+		    ],
+		    [
+		        [
+		            {
+		                "name": "g0dspeed",
+		                "id": "6",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-4/",
+		                "score": 59,
+		                "seed": 2
+		            },
+		            {
+		                "name": "BurntRaw",
+		                "id": "2",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-4/",
+		                "score": 72,
+		                "seed": 3
+		            }
+		        ],
+		        [
+		            {
+		                "name": "FoxSlay",
+		                "id": "5",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2/",
+		                "score": 132,
+		                "seed": 4
+		            },
+		            {
+		                "name": "Pyrotek",
+		                "id": "9",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2/",
+		                "score": 112,
+		                "seed": 5
+		            }
+		        ],
+		        [
+		            {
+		                "name": "Raaaa",
+		                "id": "10",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-2/",
+		                "score": 105,
+		                "seed": 6
+		            },
+		            {
+		                "name": "HotShot",
+		                "id": "7",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-2/",
+		                "score": 108,
+		                "seed": 7
+		            }
+		        ],
+		        [
+		            {
+		                "name": "Energet",
+		                "id": "4",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-3/",
+		                "score": 144,
+		                "seed": 8
+		            },
+		            {
+		                "name": "Swagson",
+		                "id": "11",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-2-3/",
+		                "score": 121,
+		                "seed": 9
+		            }
+		        ]
+		    ],
+		    [
+		        [
+		            {
+		                "name": "BurntRaw",
+		                "id": "2",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-3-2/",
+		                "score": 172,
+		                "seed": 3
+		            },
+		            {
+		                "name": "FoxSlay",
+		                "id": "5",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-3-2/",
+		                "score": 153,
+		                "seed": 4
+		            }
+		        ],
+		        [
+		            {
+		                "name": "HotShot",
+		                "id": "7",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-3/",
+		                "score": 189,
+		                "seed": 7
+		            },
+		            {
+		                "name": "Energet",
+		                "id": "4",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-3/",
+		                "score": 211,
+		                "seed": 8
+		            }
+		        ]
+		    ],
+		    [
+		        [
+		            {
+		                "name": "BurntRaw",
+		                "id": "2",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-4/",
+		                "score": 123,
+		                "seed": 3
+		            },
+		            {
+		                "name": "Energet",
+		                "id": "4",
+		                "url": "https://skywarriorthemes.com/arcane/matches/winter-games-finals-round-4/",
+		                "score": 116,
+		                "seed": 8
+		            }
+		        ]
+		    ],
+		    [
+		        [
+		            {
+		                "name": "BurntRaw",
+		                "id": "2",
+		                "seed": 3
+		            }
+		        ]
+		    ]
+		];
+           jQuery("#thebracket").gracket({ src : KnockOutData, canvasLineColor: "#fff", canvasLineWidth: 2, canvasId : "g_canvas", canvasClass : "g_canvas" });
+           jQuery(".g_game").on("click", function(e) {
+				var hasurl = "";
+				jQuery(this).children().each(function (index) {
+					jQuery(this).children().each(function (index) {
+						var tempurl = jQuery(this).data("url");
+						if (tempurl !== undefined) {
+							hasurl = tempurl;
+						}
+					});
+				});
+				if (hasurl.length > 1) {
+					var win = window.open(hasurl, "_blank");
+				}
+		   });
+
+            var childz = jQuery("#thebracket");
+            var parentz = jQuery("#knockout_holder");
+            var parentPos = parentz.offset();
+            var childPos = childz.offset();
+
+
+            jQuery( "#thebracket" ).draggable({
+                drag: function(event, ui) {
+
+                     if (ui.position.top > 0) {
+                            ui.position.top = 0;
+                      }
+                      if (ui.position.top < 0) {
+                            ui.position.top = 0;
+                      }
+
+                      if (ui.position.left < (parentz.width() - childz.width())) {
+                          ui.position.left= parentz.width() - childz.width();
+                      }
+                       if (ui.position.left > 0) {
+                            ui.position.left= 0;
+                      }
+
+
+                  },
+
+                scroll: false });
+        });
+	</script>
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body class="blog-style single-tournament-page">
+
+	<!-- top header -->
+	<div class="navbar-wrapper container-fluid">
+
+		<div class="col-lg-4">
+
+			<div class="social-top">
+                <a class="rss" href="index.html"
+                target="_blank"><i class="fa fa-rss"></i></a> <a class=
+                "youtube" href="index.html"
+                target="_blank"><i class="fa fa-youtube"></i></a> <a class=
+                "twitch" href="index.html"
+                target="_blank"><i class="fa fa-twitch"></i></a> <a class=
+                "steam" href="index.html" target=
+                "_blank"><i class="fa fa-steam"></i></a> <a class=
+                "google-plus" href="index.html"
+                target="_blank"><i class="fa fa-google-plus"></i></a>
+                <a class="twitter" href=
+                "index.html" target=
+                "_blank"><i class="fa fa-twitter"></i></a> <a class=
+                "facebook" href="index.html"
+                target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+		</div>
+		<div class="logo col-lg-4 col-md-4">
+			<a class="brand" href=
+                "index.html"><img alt="logo" src=
+                "./images/logo.png"></a>
+		</div>
+		<div class="login-info">
+            <a class="register-btn" href="register.html"><i class="fa fa-pencil-square-o"></i> <span>Register</span></a> <i>or</i> <a class=
+                "login-btn"><i class="fa fa-lock"></i> <span>Sign in</span></a>
+		</div>
+	</div>
+
+	<!-- main navigation -->
+	<nav class="navbar navbar-inverse container-fluid header-navigation-wrapper">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#header-menu" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="header-menu">
+				<ul class="nav navbar-nav header-menu-navigation">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="header-menu-icon fa fa-home"></i><span class="header-menu-text">Homepage</span><i class="dropdown-icon fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu dropdown-regular no-padding">
+		                  <li><a href="landing.html">Landing page</a></li>
+		                  <li><a href="index.html">Main</a></li>
+		                  <li><a href="blog-style.html">Blog style</a></li>
+		                  <li><a href="sports.html">Sports</a></li>
+		                </ul>
+		            </li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="header-menu-icon fa fa-trophy"></i><span class="header-menu-text">team wars</span><i class="dropdown-icon fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu team-wars-menu no-padding">
+	                  		<li class="tw-1">
+	                  			<a href="tournaments-page.html">Tournaments</a>
+	                  			<ul class="tournaments-menu">
+	                  				<li><a href="tournaments-page.html">How it works</a></li>
+	                  				<li><a href="single-tournament.html">Upcoming</a></li>
+	                  				<li><a href="single-tournament-finished.html">Finished</a></li>
+	                  			</ul>
+	                  		</li>
+	                  		<li class="tw-1">
+	                  			<a href="matches.html">Matches</a>
+	                  			<ul class="matches-menu">
+	                  				<li><a href="matches.html">Matches</a></li>
+	                  				<li><a href="upcoming-match.html">Upcoming</a></li>
+	                  				<li><a href="single-match.html">Finished</a></li>
+	                  			</ul>
+	                  		</li>
+	                  		<li class="tw-1">
+	                  			<a href="members.html">Members</a>
+	                  			<ul class="members-menu">
+	                  				<li><a href="members.html">Members</a></li>
+	                  				<li><a href="profile.html">Custom profile</a></li>
+	                  			</ul>
+	                  		</li>
+	                  		<li class="tw-1">
+	                  			<a href="teams.html">Teams</a>
+	                  			<ul class="teams-menu">
+	                  				<li><a href="teams.html">Teams</a></li>
+	                  				<li><a href="single-team-page.html">Team page</a></li>
+	                  			</ul>
+	                  		</li>
+	                  		<li class="tw-2">
+	                  			<div>
+	                  				<h4>Create teams, fight matches and organize tournaments</h4>
+	                  			</div>
+	                  		</li>
+	                  		<li class="tw-3">
+	                  			<ul class="tournaments-menu tw3-menu nav nav-tabs">
+	                  				<li class="active"><a data-toggle="tab" href="#teams" role="button">Teams<i class="fa fa-angle-right"></i></a></li>
+	                  				<li><a data-toggle="tab" href="#tournaments" role="button">Tournaments<i class="fa fa-angle-right"></i></a></li>
+	                  				<li><a data-toggle="tab" href="#matches" role="button">Matches<i class="fa fa-angle-right"></i></a></li>
+	                  				<li><a data-toggle="tab" href="#members" role="button">Members<i class="fa fa-angle-right"></i></a>
+
+	                  				</li>
+
+	                  				<div class="tab-content">
+
+	                  					<ul class="tab-pane active no-padding" id="teams">
+						                  	<li><a href="single-team-page.html"><img src="images/cloud9-counterstrike-wallpaper-1-150x150.jpg" alt="cloud9"></a></li>
+						                	<li><a href="single-team-page.html"><img src="images/lK1NsvDK-1-150x150.png" alt="flipside"></a></li>
+						                 	<li><a href="single-team-page.html"><img src="images/a25c884d950a539b9a54e2f79206ebe06237-1-150x150.jpg" alt="virtuspro"></a></li>
+						                 	<li><a href="single-team-page.html"><img src="images/as-1-150x150.jpg" alt="nv"></a></li>
+						                 	<li><a href="single-team-page.html"><img src="images/logo-helmet-1-150x150.jpg" alt="skywarrior"></a></li>
+						                  	<li><a href="single-team-page.html"><img src="images/qN1JFnkg-1-150x150.png" alt="fnatic"></a></li>
+						                  	<li><a href="single-team-page.html"><img src="images/Avatar_Large-1-150x150.png" alt="teamgg"></a></li>
+						                </ul>
+
+	                  					<ul class="tab-pane no-padding" id="tournaments">
+						                  	<li id="main-menu-tournaments">
+
+						                  		<h4><i style="color: #ff8400" class="fa fa-trophy"></i> LATEST CREATED TOURNAMENTS</h4>
+
+						                  		<!-- tournment slider -->
+												<div class="carousel slide main-menu-tournament-slider" data-ride="carousel" id="main-menu-carousel">
+												    <!-- Wrapper for slides -->
+												    <div class="carousel-inner" role="listbox">
+
+											    		<!-- single tournament -->
+														<div class="item active carousel-tournament">
+															<div class="single-tournament">
+																<div class="carousel-tournament-info">
+																<a href="single-tournament.html"><h4>esl 2016</h4></a>
+																<div class="tournament-image">
+																	<a href="single-tournament.html"><img src="images/cs-85x116.jpg"></a>
+																</div>
+																<div class="tournament-text">
+																	<p><span>Location: </span>Paris, France</p>
+																	<br>
+																	<p><span>Maximum participants:</span> 100 teams</p>
+																	<p><span>Current participants:</span> 4 teams</p>
+																	<br>
+																	<p class="tournament-prize"><span>Prize:</span> $5000, $2500, $1000, CS:GO T-Shirt</p>
+																</div>
+															</div>
+															<div class="tournament-date"><p>May 5, 2016, <span>9:00 pm</span></p></div>
+															</div>
+														</div>
+
+														<!-- single tournament -->
+														<div class="item carousel-tournament">
+															<div class="single-tournament">
+																<div class="carousel-tournament-info">
+																<a href="single-tournament.html"><h4>LOL RANDOMZ @ COMIC CON</h4></a>
+																<div class="tournament-image">
+																	<a href="single-tournament.html"><img src="images/lol-85x116.jpg"></a>
+																</div>
+																<div class="tournament-text">
+																	<p><span>Location: </span>Server: 99.168.0.1</p>
+																	<br>
+																	<p><span>Maximum participants:</span> 128 teams</p>
+																	<p><span>Current participants:</span> 4 teams</p>
+																	<br>
+																	<p class="tournament-prize"><span>Prize:</span> $5000, $2500, $1000, CS:GO T-Shirt</p>
+																</div>
+															</div>
+															<div class="tournament-date"><p>May 5, 2016, <span>9:00 pm</span></p></div>
+															</div>
+														</div>
+
+														<!-- single tournament -->
+														<div class="item carousel-tournament">
+															<div class="single-tournament">
+																<div class="carousel-tournament-info">
+																<a href="single-tournament.html"><h4>ELECTRONIC SPORTS WORLD CUP 2018</h4></a>
+																<div class="tournament-image">
+																	<a href="single-tournament.html"><img src="images/dota-85x116.jpg"></a>
+																</div>
+																<div class="tournament-text">
+																	<p><span>Location: </span>Paris, France</p>
+																	<br>
+																	<p><span>Maximum participants:</span> 48 teams</p>
+																	<p><span>Current participants:</span> 4 teams</p>
+																	<br>
+																	<p class="tournament-prize"><span>Prize:</span> $5000, $2500, $1000, CS:GO T-Shirt</p>
+																</div>
+															</div>
+															<div class="tournament-date"><p>May 5, 2016, <span>9:00 pm</span></p></div>
+															</div>
+														</div>
+
+													</div>
+
+												    <!-- Left and right controls -->
+												    <a class="left carousel-control" href="#main-menu-carousel" role="button" data-slide="prev">
+												      <span class="fa fa-chevron-left" aria-hidden="true"></span>
+												      <span class="sr-only">Previous</span>
+												    </a>
+												    <a class="right carousel-control" href="#main-menu-carousel" role="button" data-slide="next">
+												      <span class="fa fa-chevron-right" aria-hidden="true"></span>
+												      <span class="sr-only">Next</span>
+												    </a>
+												</div>
+						                  	</li>
+						                </ul>
+
+	                  					<ul class="tab-pane no-padding" id="matches">
+						                  	<li id="main-menu-matches">
+						                  		<!-- matches -->
+												<div class="tab-content-wrapper">
+													<ul class="nav nav-tabs matches-tab-wrapper">
+													  <li class="active"><a data-toggle="tab" href="#home">ALL</a></li>
+													  <li><a data-toggle="tab" href="#menu1">CS:GO</a></li>
+													  <li><a data-toggle="tab" href="#menu2">LOL</a></li>
+													  <li><a data-toggle="tab" href="#menu3">Battlefield</a></li>
+													  <li><a data-toggle="tab" href="#menu4">WoT</a></li>
+													</ul>
+
+													<div class="tab-content">
+													  <div id="home" class="tab-pane fade in active">
+
+													  	<!-- matches list -->
+													    <ul class="match-list">
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result win">23:20</span>
+													    			<div class="single-match">
+													    				<img src="images/qN1JFnkg-25x25.png">
+													    				<span class="vs">vs</span>
+													    				<img src="images/cloud9-counterstrike-wallpaper-25x25.jpg">
+													    			</div>
+													    			<span class="date">CS:GO - October 4, 2016, 1:58 pm</span>
+													    		</a>
+													    	</li>
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result lose">12:16</span>
+													    			<div class="single-match">
+													    				<img src="images/logo-helmet-25x25.jpg">
+													    				<span class="vs">vs</span>
+													    				<img src="images/as-25x25.jpg">
+													    			</div>
+													    			<span class="date">CS:GO - May 5, 2016, 9:00 pm</span>
+													    		</a>
+													    	</li>
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result">0:0</span>
+													    			<div class="single-match">
+													    				<img src="images/13-1-25x25.jpg">
+													    				<span class="vs">vs</span>
+													    				<img src="images/20-1-25x25.jpg">
+													    			</div>
+													    			<span class="date">CS:GO - May 12, 2016, 9:00 pm</span>
+													    		</a>
+													    	</li>
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result win">43:34</span>
+													    			<div class="single-match">
+													    				<img src="images/16-25x25.jpg">
+													    				<span class="vs">vs</span>
+													    				<img src="images/19-1-25x25.jpg">
+													    			</div>
+													    			<span class="date">CS:GO - October 4, 2016, 1:58 pm</span>
+													    		</a>
+													    	</li>
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result win">24:22</span>
+													    			<div class="single-match">
+													    				<img src="images/qN1JFnkg-25x25.png">
+													    				<span class="vs">vs</span>
+													    				<img src="images/logo-helmet-25x25.jpg">
+													    			</div>
+													    			<span class="date">LoL - April 8, 2016, 8:10 pm</span>
+													    		</a>
+													    	</li>
+														</ul>
+													  </div>
+													  <div id="menu1" class="tab-pane fade">
+													    <!-- matches list -->
+													    <ul class="match-list">
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result lose">12:16</span>
+													    			<div class="single-match">
+													    				<img src="images/logo-helmet-25x25.jpg">
+													    				<span class="vs">vs</span>
+													    				<img src="images/as-25x25.jpg">
+													    			</div>
+													    			<span class="date">CS:GO - May 5, 2016, 9:00 pm</span>
+													    		</a>
+													    	</li>
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result win">43:34</span>
+													    			<div class="single-match">
+													    				<img src="images/16-25x25.jpg">
+													    				<span class="vs">vs</span>
+													    				<img src="images/19-1-25x25.jpg">
+													    			</div>
+													    			<span class="date">CS:GO - October 4, 2016, 1:58 pm</span>
+													    		</a>
+													    	</li>
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result win">33:14</span>
+													    			<div class="single-match">
+													    				<img src="images/as-25x25.jpg">
+													    				<span class="vs">vs</span>
+													    				<img src="images/cloud9-counterstrike-wallpaper-25x25.jpg">
+													    			</div>
+													    			<span class="date">LoL - April 8, 2016, 8:10 pm</span>
+													    		</a>
+													    	</li>
+													  </div>
+													  <div id="menu2" class="tab-pane fade">
+													    <!-- matches list -->
+													    <ul class="match-list">
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result lose">25:27</span>
+													    			<div class="single-match">
+													    				<img src="images/19-1-25x25.jpg">
+													    				<span class="vs">vs</span>
+													    				<img src="images/16-25x25.jpg">
+													    			</div>
+													    			<span class="date">LoL - April 8, 2016, 8:10 pm</span>
+													    		</a>
+													    	</li>
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result lose">24:35</span>
+													    			<div class="single-match">
+													    				<img src="images/qN1JFnkg-25x25.png">
+													    				<span class="vs">vs</span>
+													    				<img src="images/cloud9-counterstrike-wallpaper-25x25.jpg">
+													    			</div>
+													    			<span class="date">CS:GO - October 4, 2016, 1:58 pm</span>
+													    		</a>
+													    	</li>
+													    </ul>
+													  </div>
+													  <div id="menu3" class="tab-pane fade">
+
+														  	<!-- matches list -->
+														    <ul class="match-list">
+
+														    	<!-- single match -->
+														    	<li class="single-match-wrapper">
+														    		<a href="single-match.html">
+														    			<span class="result win">23:20</span>
+														    			<div class="single-match">
+														    				<img src="images/qN1JFnkg-25x25.png">
+														    				<span class="vs">vs</span>
+														    				<img src="images/cloud9-counterstrike-wallpaper-25x25.jpg">
+														    			</div>
+														    			<span class="date">CS:GO - October 4, 2016, 1:58 pm</span>
+														    		</a>
+														    	</li>
+
+														    	<!-- single match -->
+														    	<li class="single-match-wrapper">
+														    		<a href="single-match.html">
+														    			<span class="result lose">12:16</span>
+														    			<div class="single-match">
+														    				<img src="images/logo-helmet-25x25.jpg">
+														    				<span class="vs">vs</span>
+														    				<img src="images/as-25x25.jpg">
+														    			</div>
+														    			<span class="date">CS:GO - May 5, 2016, 9:00 pm</span>
+														    		</a>
+														    	</li>
+
+														    	<!-- single match -->
+														    	<li class="single-match-wrapper">
+														    		<a href="single-match.html">
+														    			<span class="result">0:0</span>
+														    			<div class="single-match">
+														    				<img src="images/13-1-25x25.jpg">
+														    				<span class="vs">vs</span>
+														    				<img src="images/20-1-25x25.jpg">
+														    			</div>
+														    			<span class="date">CS:GO - May 12, 2016, 9:00 pm</span>
+														    		</a>
+														    	</li>
+
+														    	<!-- single match -->
+														    	<li class="single-match-wrapper">
+														    		<a href="single-match.html">
+														    			<span class="result win">43:34</span>
+														    			<div class="single-match">
+														    				<img src="images/16-25x25.jpg">
+														    				<span class="vs">vs</span>
+														    				<img src="images/19-1-25x25.jpg">
+														    			</div>
+														    			<span class="date">CS:GO - October 4, 2016, 1:58 pm</span>
+														    		</a>
+														    	</li>
+
+														    	<!-- single match -->
+														    	<li class="single-match-wrapper">
+														    		<a href="single-match.html">
+														    			<span class="result win">24:22</span>
+														    			<div class="single-match">
+														    				<img src="images/qN1JFnkg-25x25.png">
+														    				<span class="vs">vs</span>
+														    				<img src="images/logo-helmet-25x25.jpg">
+														    			</div>
+														    			<span class="date">LoL - April 8, 2016, 8:10 pm</span>
+														    		</a>
+														    	</li>
+														</ul>
+													  </div>
+													  <div id="menu4" class="tab-pane fade">
+
+													  	<!-- matches list -->
+													    <ul class="match-list">
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result win">23:20</span>
+													    			<div class="single-match">
+													    				<img src="images/qN1JFnkg-25x25.png">
+													    				<span class="vs">vs</span>
+													    				<img src="images/cloud9-counterstrike-wallpaper-25x25.jpg">
+													    			</div>
+													    			<span class="date">CS:GO - October 4, 2016, 1:58 pm</span>
+													    		</a>
+													    	</li>
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result lose">12:16</span>
+													    			<div class="single-match">
+													    				<img src="images/logo-helmet-25x25.jpg">
+													    				<span class="vs">vs</span>
+													    				<img src="images/as-25x25.jpg">
+													    			</div>
+													    			<span class="date">CS:GO - May 5, 2016, 9:00 pm</span>
+													    		</a>
+													    	</li>
+
+													    	<!-- single match -->
+													    	<li class="single-match-wrapper">
+													    		<a href="single-match.html">
+													    			<span class="result win">24:22</span>
+													    			<div class="single-match">
+													    				<img src="images/qN1JFnkg-25x25.png">
+													    				<span class="vs">vs</span>
+													    				<img src="images/logo-helmet-25x25.jpg">
+													    			</div>
+													    			<span class="date">LoL - April 8, 2016, 8:10 pm</span>
+													    		</a>
+													    	</li>
+
+													    </ul>
+													  </div>
+
+													</div>
+												</div>
+						                  	</li>
+						                </ul>
+
+	                  					<ul class="tab-pane no-padding" id="members">
+						                  	<li id="main-menu-matches">
+						                  		<!-- matches -->
+												<div class="tab-content-wrapper">
+													<ul class="nav nav-tabs matches-tab-wrapper">
+													  <li class="active"><a data-toggle="tab" href="#home">NEWEST</a></li>
+													  <li><a data-toggle="tab" href="#menu1">ACTIVE</a></li>
+													</ul>
+
+													<div class="tab-content">
+													  <div id="home" class="tab-pane fade in active">
+
+													  	<!-- members list -->
+													    <ul class="match-list">
+
+													    	<!-- single member -->
+													    	<li class="single-match-wrapper single-team">
+																<div class="team-avatar"><a href="profile.html"><img src="images/11-1.jpg"></a></div>
+																<div class="team-info">
+																	<a href="profile.html" class="team-title">admin</a>
+																	<span class="members">active 1 week ago</span>
+																</div>
+															</li>
+
+													    	<li class="single-match-wrapper single-team">
+																<div class="team-avatar"><a href="profile.html"><img src="images/16.jpg"></a></div>
+																<div class="team-info">
+																	<a href="profile.html" class="team-title">Pyrotek</a>
+																	<span class="members">active 1 week ago</span>
+																</div>
+															</li>
+
+															<li class="single-match-wrapper single-team">
+																<div class="team-avatar"><a href="profile.html"><img src="images/15-1.jpg"></a></div>
+																<div class="team-info">
+																	<a href="profile.html" class="team-title">Kyōsuke</a>
+																	<span class="members">active 1 week ago</span>
+																</div>
+															</li>
+
+															<li class="single-match-wrapper single-team">
+																<div class="team-avatar"><a href="profile.html"><img src="images/22-1.jpg"></a></div>
+																<div class="team-info">
+																	<a href="profile.html" class="team-title">Byrewthf</a>
+																	<span class="members">active 1 week ago</span>
+																</div>
+															</li>
+
+															<li class="single-match-wrapper single-team">
+																<div class="team-avatar"><a href="profile.html"><img src="images/18-1.jpg"></a></div>
+																<div class="team-info">
+																	<a href="profile.html" class="team-title">BurntRaw</a>
+																	<span class="members">active 1 week ago</span>
+																</div>
+															</li>
+													    </ul>
+													  </div>
+													  <div id="menu1" class="tab-pane fade">
+													    <p>Some content in menu 1.</p>
+													  </div>
+													  <div id="menu2" class="tab-pane fade">
+													    <p>Some content in menu 2.</p>
+													  </div>
+													</div>
+												</div>
+						                  	</li>
+						                </ul>
+
+	                  				</div>
+
+	                  			</ul>
+	                  		</li>
+		                </ul>
+		            </li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="header-menu-icon fa fa-crosshairs"></i><span class="header-menu-text">gaming news</span><i class="dropdown-icon fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu no-padding team-wars-menu game-news-menu">
+		                	<li class="tw-3">
+	                  			<ul class="tournaments-menu tw3-menu nav nav-tabs">
+	                  				<li class="active"><a data-toggle="tab" role="button" href="#adventure-news">Adventure<i class="fa fa-angle-right"></i></a></li>
+	                  				<li><a data-toggle="tab" role="button" href="#shooter-news">Shooters<i class="fa fa-angle-right"></i></a>
+
+	                  				</li>
+	                  				<li><a data-toggle="tab" role="button" href="#racing-news">Racing<i class="fa fa-angle-right"></i></a></li>
+
+	                  				<div class="tab-content">
+
+	                  					<ul id="adventure-news" class="tab-pane active">
+						                  	<li><a href="single-post.html"><img src="images/Untitled-2.jpg" alt="unt2"></a></li>
+						                	<li class="tw-1">
+						                		<ul class="tournaments-menu adventure-menu">
+						                			<li class="tw-1">
+						                				<a href="blog-style.html">INDIE</a>
+							                  			<ul class="tournaments-menu">
+							                  				<li><a href="single-post.html">Etiam massa mauris fermentum a congue id</a></li>
+							                  				<li><a href="single-post.html">Fermentum sit amet congue sit amet</a></li>
+							                  				<li><a href="single-post.html">Fusce id justo ac lacus aliquet lobortis</a></li>
+							                  			</ul>
+						                			</li>
+						                			<li class="tw-1">
+						                				<a href="blog-style.html">MMORPG</a>
+							                  			<ul class="tournaments-menu">
+							                  				<li><a href="single-post.html">Etiam massa mauris fermentum a congue id</a></li>
+							                  				<li><a href="single-post.html">Fermentum sit amet congue sit amet</a></li>
+							                  				<li><a href="single-post.html">Fusce id justo ac lacus aliquet lobortis</a></li>
+							                  			</ul>
+						                			</li>
+						                		</ul>
+					                  		</li>
+						                 	<li class="tw-1">
+					                  			<a href="blog-style.html">FREE TO PLAY</a>
+					                  			<ul class="tournaments-menu">
+					                  				<li><a href="single-post.html">In lobortis tellus non augue</a></li>
+					                  				<li><a href="single-post.html">Integer quis orci nisi auguros grantos cibilia lorbos</a></li>
+					                  				<li><a href="single-post.html">Lorem nibh bibendum nisi nipparo ed amus</a></li>
+					                  				<li><a href="single-post.html">Tortor vestibulum pretiums</a></li>
+					                  				<li><a href="single-post.html">Vestibulum ut dignissim tellus</a></li>
+					                  				<li><a href="single-post.html">Vivamus a lectus mi cara vita tutta nouvos dios</a></li>
+					                  				<li><a href="single-post.html">Vix at eros intellegat sea no facer</a></li>
+					                  			</ul>
+					                  		</li>
+						                </ul>
+	                  					<ul id="shooter-news" class="tab-pane no-padding">
+						                  	<li class="tw-1">
+						                		<ul class="tournaments-menu adventure-menu">
+						                			<li class="tw-1">
+						                				<a href="blog-style.html">INDIE</a>
+							                  			<ul class="tournaments-menu">
+							                  				<li><a href="single-post.html">Etiam massa mauris fermentum a congue id</a></li>
+							                  				<li><a href="single-post.html">Fermentum sit amet congue sit amet</a></li>
+							                  				<li><a href="single-post.html">Fusce id justo ac lacus aliquet lobortis</a></li>
+							                  				<li><a href="single-post.html">Morbi vel ipsum vel augue mattis ultricies non et mauris</a></li>
+							                  			</ul>
+						                			</li>
+						                			<li class="tw-1">
+						                				<a href="blog-style.html">MMORPG</a>
+							                  			<ul class="tournaments-menu">
+							                  				<li><a href="single-post.html">Etiam massa mauris fermentum a congue id</a></li>
+							                  				<li><a href="single-post.html">Fermentum sit amet congue sit amet</a></li>
+							                  				<li><a href="single-post.html">Fusce id justo ac lacus aliquet lobortis</a></li>
+							                  			</ul>
+						                			</li>
+						                		</ul>
+					                  		</li>
+					                  		<li><a href="single-post.html"><img src="images/8-1-250x250.jpg" alt="unt3"><span class="shooters-text-title">Eget ultrices mauris rhoncus non</span><span class="shooters-text-desc">May 4, 2013</span></a></li>
+					                  		<li><a href="single-post.html"><img src="images/2-2-250x250.jpg" alt="unt4"><span class="shooters-text-title">Eget ultrices mauris rhoncus non</span><span class="shooters-text-desc">May 4, 2013</span></a></li>
+						                </ul>
+	                  					<ul id="racing-news" class="tab-pane">
+						                  	<li><a href="single-post.html"><img src="images/30-250x250.jpg" alt="unt3"><span class="large-text-title">Eget ultrices mauris rhoncus non</span></a></li>
+					                  		<li><a href="single-post.html"><img src="images/21-250x250.jpg" alt="unt4"><span class="large-text-title">Eget ultrices mauris rhoncus non</span></a></li>
+					                  		<li><a href="single-post.html"><img src="images/9-250x250.jpg" alt="unt3"><span class="large-text-title">Eget ultrices mauris rhoncus non</span></a></li>
+					                  		<li><a href="single-post.html"><img src="images/6-1-250x250.jpg" alt="unt4"><span class="large-text-title">Eget ultrices mauris rhoncus non</span></a></li>
+						                </ul>
+	                  				</div>
+
+	                  			</ul>
+	                  		</li>
+		                </ul>
+		            </li>
+					<li><a href="forum.html" class="no-dropdown"><i class="header-menu-icon fa fa-users"></i><span class="header-menu-text">Forums</span></a></li>
+					<li class="dropdown"><a href="shop.html"><i class="header-menu-icon fa fa-shopping-cart"></i><span class="header-menu-text">shop</span><i class="dropdown-icon fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu team-wars-menu game-news-menu shop-menu no-padding">
+		                  <li class="tw-1">
+		                  	<a href="product.html">Awesome products</a>
+		                  	<a href="product.html"><img src="images/poster_2_up.jpg" alt="unt3"></a>
+		                  	<a href="product.html"><img src="images/T_7_front.jpg" alt="unt3"></a>
+		                  	<a href="product.html"><img src="images/hoodie_4_front.jpg" alt="unt3"></a>
+		                  	<a href="product.html"><img src="images/T_5_front.jpg" alt="unt3"></a>
+		                  	<a href="product.html"><img src="images/hoodie_5_front.jpg" alt="unt3"></a>
+		                  </li>
+		                </ul>
+		            </li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="header-menu-icon fa fa-newspaper-o"></i><span class="header-menu-text">blog</span><i class="dropdown-icon fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu dropdown-regular blog-menu no-padding">
+		                  <li><a href="single-post.html">Post layouts</a>
+		                  	<ul class="dropdown-menu sub-menu">
+				                <li><a href="single-post.html">Right sidebar</a></li>
+				                <li><a href="single-post-left.html">Left sidebar</a></li>
+				                <li><a href="single-post-full.html">Full width</a></li>
+		                  	</ul>
+		                  </li>
+		                  <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
+		                  <li><a href="blog-style-left.html">Blog left sidebar</a></li>
+		                  <li><a href="blog-style-full.html">Blog full width</a></li>
+		                  <li><a href="blog-style-isotope.html">Blog isotope</a></li>
+		                </ul>
+		            </li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="header-menu-icon fa fa-envelope-o"></i><span class="header-menu-text">contact</span><i class="dropdown-icon fa fa-angle-down"></i></a>
+						<ul class="dropdown-menu no-padding team-wars-menu contact-menu">
+		                	<li class="contact-map">
+	                  			<div><a href="https://maps.google.com/maps?ll=35.689488,139.691706&z=15&t=m&hl=en-US&gl=US&mapclient=apiv3">
+	                  				<img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=500x520&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=AIzaSyDogsDTAfsS0MSjXngILgz5_4aoAkLPwfc"></a></div>
+	                  		</li>
+
+	                  		<li class="shortcodes-title">
+	                  			<h4>SHORTCODES & WIDGETS</h4>
+	                  			<p>Add widgets or shortcodes to your menu to completely customize its contents.</p>
+	                  		</li>
+
+	                  		<li class="menu-contact-form">
+	                  			<form id="commentform">
+									<div class="form-section">
+										<input id="author" name="author" placeholder="Name*" type="text" value="" size="30" maxlength="20" tabindex="3">
+									</div>
+									<div class="form-section">
+										<input placeholder="Email*" id="email" name="email" type="text" value="" size="30" maxlength="50" tabindex="4">
+									</div>
+									<div class="form-section">
+										<input id="url" placeholder="Website" name="url" type="text" value="" size="30" maxlength="50" tabindex="5">
+									</div>
+									<div class="form-section">
+										<textarea placeholder="Dummy contact form text..." id="comment" name="comment" cols="45" rows="8" tabindex="6"></textarea>
+									</div>
+									<div class="form-submit">
+										<input id="submit" name="submit" class="button-small button-green" type="submit" value="Send" tabindex="7">
+									</div>
+								</form>
+	                  		</li>
+		                </ul>
+		            </li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- news ticker -->
+	<div class="container-fluid ticker">
+		<div class="container">
+			<div class="ticker-title">
+				<i class="fa fa-bullhorn"></i><span>&nbsp;BREAKING NEWS</span>
+			</div>
+			<div class="tickercontainer">
+			    <div class="mask">
+			        <ul id="webticker" class="newsticker">
+			            <li class="ticker-spacer"></li>
+			            <li>This List Item will scroll infintely</li>
+			            <li>And this one will follow it</li>
+			            <li class="last" >Finally when it goes out of screen, it will queue again at the end</li>
+			        </ul>
+			        <span class="tickeroverlay-left">&nbsp;</span>
+			        <span class="tickeroverlay-right">&nbsp;</span>
+			    </div>
+			</div>
+			<div class="search-top">
+				<form method="get" id="sform" action="http://skywarriorthemes.com/arcane/">
+                    <input type="search" placeholder="Search for..." autocomplete="off" name="s" style="width: 3px; padding: 10px 20px 8px; border: 0px solid transparent; cursor: pointer; color: rgb(0, 0, 0);">
+                    <input type="hidden" name="post_type[]" value="post">
+                    <input type="hidden" name="post_type[]" value="page">
+                    <i class="fa fa-search"></i>
+                </form>
+			</div>
+		</div>
+	</div>
+
+	<!-- main slider -->
+	<div class="container-fluid no-padding">
+		<div class="tournament-header">
+			<div class="header-background-img"></div>
+			<div class="dots"></div>
+			<div class="container">
+				<div class="tournament-desc">
+					<div class="tournament-desc-left">
+						<h1>
+							<img src="images/smite-53x73.jpg" alt="smite">
+							ESL UK PREMIERSHIP SUMMER 2020
+						</h1>
+						<div class="tournament-registration">
+							<p>Tournament starts in:</p>
+							<span id="tournament-count">1372 days 07:46:44</span>
+						</div>
+						<a href="#" class="button-small"><i class="fa fa-trophy"></i>Join Now</a>
+						<div class="clearfix"></div>
+					</div>
+					<div class="tournament-desc-right">
+						<p>Maecenas ut erat scelerisque tortor vestibulum pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed iaculis dui vitae nisl lobortis eu vehicula lacus dignissim.Donec quis nisi nec nulla malesuada scelerisque vitae ac turpis. In eget elit eu risus gravida adipiscing.Morbi vel ipsum vel augue mattis ultricies non et mauris. Phasellus rhoncus euismod massa. Etiam euismod tristique venenatis. Curabitur lorem mauris, dictum et tempus eu, feugiat pharetra sapien. Donec vel turpis orci, ut congue tortor. Aenean sed interdum quam. Vivamus laoreet posuere pharetra. In lobortis tellus non augue tempor eleifend. Vestibulum ut dignissim tellus. Morbi ornare, enim a semper venenatis, odio justo luctus enim, consectetur sodales justo est id leo</p>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="tournament-info">
+					<div class="tournament-info-left">
+						<h2 id="tournament-date">
+							<strong>Starts</strong>
+							July 28, 2020 6:45 pm
+						</h2>
+						<!-- social networks share buttons -->
+						<div class="container share-social-wrapper">
+							<div class="share-social">
+								<a href="index.html" role="button" class="share-button"><i class="fa fa-plus"></i></a>
+								<a href="index.html" role="button" class="share-button"><i class="fa fa-reddit-alien"></i></a>
+								<a href="index.html" role="button" class="share-button"><i class="fa fa-facebook"></i></a>
+								<a href="index.html" role="button" class="share-button"><i class="fa fa-twitter"></i></a>
+								<a href="index.html" role="button" class="share-button"><i class="fa fa-link"></i></a>
+								<a href="index.html" role="button" class="share-button"><i class="fa fa-envelope"></i></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="tournament-info-right">
+						<h2>About</h2>
+						<ul>
+							<li class="participants">
+								<img src="images/team.png" alt="team">
+								<h3>2 out of 32</h3>
+								<span>participants</span>
+							</li>
+							<li class="type">
+								<img src="images/diagram.png" alt="diagram">
+								<h3>Round Robbin with knockout</h3>
+								<span>Tournament type</span>
+							</li>
+							<li class="location">
+								<img src="images/location.png" alt="location">
+								<h3>London</h3>
+								<span>Location</span>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<div class="top-divider"></div>
+
+	<!-- page content wrapper -->
+	<section class="content-wrapper container-fluid no-padding">
+		<div class="container main-wrapper">
+
+			<div class="accordion" id="accordion2">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a href="#collapseOne" class="accordion-toggle show-more" data-toggle="collapse" data-parent="#accordion2">
+							<span id="show-more">HIDE TOURNAMENT DETAILS</span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div id="collapseOne" class="accordion-body">
+						<div class="tournament-details">
+							<h2>Tournament details</h2>
+							<ul>
+				            	<li>
+				                    <h3>Game</h3>
+									<span>Smite</span>
+				                </li>
+				                <li>
+				                    <h3>Contestants</h3>
+									<span>Teams</span>
+				                </li>
+				                <li>
+				                    <h3>Game format</h3>
+				                    <span>Best of 1</span>
+				                </li>
+				                <li>
+				                    <h3>Game frequency</h3>
+				                    <span>Daily</span>
+				                </li>
+				            </ul>
+				            <div class="clearfix"></div>
+						</div>
+						<div class="tournament-competitors">
+							<h2>Competitors </h2>
+							<ul class="teams-list">
+								<li class="single-team">
+									<div class="team-avatar"><a href="single-team.html"><img src="images/cloud9-counterstrike-wallpaper-50x50.jpg"></a></div>
+									<div class="team-info">
+										<a href="single-team.html" class="team-title">cloud 9</a>
+										<span class="members">6 members</span>
+									</div>
+								</li>
+
+								<li class="single-team">
+									<div class="team-avatar"><a href="single-team.html"><img src="images/Avatar_Large-50x50.png"></a></div>
+									<div class="team-info">
+										<a href="single-team.html" class="team-title"> Team gg</a>
+										<span class="members">6 members</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tournament-regulation news-tabbed">
+							<h2>Regulations</h2>
+							<ul class="nav nav-tabs" role="tablist" id="regulations-tabs">
+								<li role="presentation" class="active">
+									<a href="#regulations_tab_0" aria-controls="regulations_tab_0" role="tab" data-toggle="tab">disputes</a>
+								</li>
+								<li role="presentation"><a href="#regulations_tab_1" aria-controls="regulations_tab_1" role="tab" data-toggle="tab">prizes</a></li>
+								<li role="presentation"><a href="#regulations_tab_2" aria-controls="regulations_tab_2" role="tab" data-toggle="tab">registration rules</a></li>
+								<li role="presentation"><a href="#regulations_tab_3" aria-controls="regulations_tab_3" role="tab" data-toggle="tab">victory conditions</a></li>
+								<li role="presentation"><a href="#regulations_tab_4" aria-controls="regulations_tab_4" role="tab" data-toggle="tab">useful links</a></li>
+							</ul>
+
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="regulations_tab_0">
+									<div class="regulation-text">
+										<h3>DISPUTES</h3>
+										<h3><b>MORBI HENDRERIT</b><b>VESTIBULUM ANTE IPSUM PRIMIS IN FAUCIBUS ORCI LUCTUS E</b><b>&nbsp;EST UT VELIT LOBORTIS, ULLAMCORPER COMMODO.</b></h3>
+										SED TRISTIQUE, MAGNA FAUCIBUS ELEMENTUM VARIUS, MAGNA NEQUE VENENATIS TELLUS, EGET ALIQUAM NUNC ELITNUNC GRAVIDA VELIT:
+										<b><br></b>
+										<ul><li>Sed est ante, ornare vel vehicula non, pretium et arcu. Nunc justo ipsum, gravida at congue at, consectetur non leo. Mauris sit amet ultrices ante.<br></li><li>Cras ut pretium erat, eget maximus augue.<br></li><li>Donec aliquam dolor eget arcu finibus, et rhoncus orci rutrum.<br></li><li>Pellentesque volutpat justo ligula, eget lobortis augue ultrices eget.<br></li></ul>
+										QUISQUE VESTIBULUM VELIT MASSA, ID VIVERRA MAURIS PULVINAR AC. SED TRISTIQUE, MAGNA FAUCIBUS ELEMENTUM VARIUS:
+										<ul><li>Quisque vestibulum pharetra risus, ac ultrices neque pretium id.<br></li><li>Integer id elementum magna.&nbsp;<br></li><li>Interdum et malesuada fames ac ante ipsum primis in faucibus.&nbsp;<br></li><li>Aliquam et imperdiet orci, in dapibus diam. Praesent felis massa, consectetur in mi non, bibendum vehicula ligula.<br></li><li>Maecenas finibus ligula nec sapien dignissim convallis. Nulla posuere, nisi at blandit mattis, eros leo sodales mauris, et placerat sapien tellus sed odio.<br></li><li>Donec luctus condimentum magna a pulvinar.</li></ul>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="regulations_tab_1">
+									<div class="regulation-text">
+										<h3>PRIZES</h3>
+										<ul><li>Quisque vestibulum pharetra risus, ac ultrices neque pretium id.<br></li><li>Integer id elementum magna.&nbsp;<br></li><li>Interdum et malesuada fames ac ante ipsum primis in faucibus.&nbsp;<br></li><li>Aliquam et imperdiet orci, in dapibus diam. Praesent felis massa, consectetur in mi non, bibendum vehicula ligula.</li></ul>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="regulations_tab_2">
+									<div class="regulation-text">
+										<h3>REGISTRATION RULES</h3>
+										<ul><li>Sed est ante, ornare vel vehicula non, pretium et arcu. Nunc justo ipsum, gravida at congue at, consectetur non leo. Mauris sit amet ultrices ante.</li><li>Quisque vestibulum pharetra risus, ac ultrices neque pretium id.<br></li><li>Integer id elementum magna.&nbsp;<br></li><li>Interdum et malesuada fames ac ante ipsum primis in faucibus.&nbsp;<br></li><li>Aliquam et imperdiet orci, in dapibus diam. Praesent felis massa, consectetur in mi non, bibendum vehicula ligula.</li></ul>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="regulations_tab_3">
+									<div class="regulation-text">
+										<h3>VICTORY CONDITIONS</h3>
+										<h3>GROUP STAGE</h3>
+										<ul><li>Sed est ante, ornare vel vehicula non, pretium et arcu. Nunc justo ipsum, gravida at congue at, consectetur non leo. Mauris sit amet ultrices ante.<br></li><li>Cras ut pretium erat, eget maximus augue.<br></li><li>Donec aliquam dolor eget arcu finibus, et rhoncus orci rutrum.</li><li>Interdum et malesuada fames ac ante ipsum primis in faucibus.&nbsp;<br></li><li>Aliquam et imperdiet orci, in dapibus diam. Praesent felis massa, consectetur in mi non, bibendum vehicula ligula.</li></ul>
+										<h3>DRAW RULES</h3>
+										MORBI HENDRERIT EST UT VELIT LOBORTIS, ULLAMCORPER COMMODO IPSUM CONSEQUAT. VESTIBULUM ANTE IPSUM PRIMIS
+										<br>
+										<br>
+										Sed est ante, ornare vel vehicula non, pretium et arcu. Nunc justo ipsum, gravida at congue at, consectetur non leo. Mauris sit amet ultrices ante. Cras ut pretium erat, eget maximus augue. Donec aliquam dolor eget arcu finibus, et rhoncus orci rutrum. Pellentesque volutpat justo ligula, eget lobortis augue ultrices eget. .&nbsp;
+										<br>
+										<br>
+										MAGNA NEQUE VENENATIS TELLUS, EGET ALIQUAM NUNC ELIT NEC MAGNA. NUNC GRAVIDA VELIT A QUAM PHARETRA, SED ULTRICIES TURPIS VESTIBULUM
+										<br>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="regulations_tab_4">
+									<div class="regulation-text">
+										<a href="blog-style.html">
+											<h3>USEFUL LINKS</h3>
+											<ul><li><a target="_blank" rel="nofollow">Morbi hendrerit est&nbsp;</a></li><li><a target="_blank" rel="nofollow">Ut velit lobortis</a></li><li><a target="_blank" rel="nofollow">Ullamcorper commodo&nbsp;</a></li><li><a target="_blank" rel="nofollow">Opsum consequat</a></li><li><a target="_blank" rel="nofollow">Vestibulum ante ipsum primis</a></li><li><a target="_blank" rel="nofollow">In faucibus orci luctus&nbsp;</a></li><li><a target="_blank" rel="nofollow">Et ultrices posuere cubilia Curae</a></li></ul>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tournament-prize">
+				<h2>Winner Prizes</h2>
+				<table cellpadding="0" cellspacing="0" id="prizes-table">
+					<tbody>
+						<tr>
+							<th><img src="images/laurel.png"><span>Place</span></th>
+							<th><img src="images/cup.png"><span>Reward</span></th>
+						</tr>
+						<tr>
+							<td class="firstrow"><span><img src="images/1st.png"> place 1st</span></td>
+							<td class="trcell"><span class="tournament-prize">$10000</span></td>
+						</tr>
+						<tr>
+							<td class="secondrow"><span><img src="images/2nd.png"> place 2nd</span></td>
+							<td class="trcell"><span class="tournament-prize">$8500</span></td>
+						</tr>
+						<tr>
+							<td class="thirdrow"><span><img src="images/3rd.png"> place 3rd</span></td>
+							<td class="trcell"><span class="tournament-prize">$2500</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+			<div id="knockout_holder"><div id="thebracket" class="draggable"></div></div>
+			<div class="clear"></div>
+		</div>
+	</section>
+
+	<footer class="container-fluid">
+		<div class="container">
+
+			<!-- footer left column -->
+			<div class="col-lg-4">
+				<!-- content title -->
+				<div class="main-content-title">
+					<h3><i class="fa fa-newspaper-o"></i> latest shooters</h3>
+				</div>
+
+				<!-- review post list -->
+				<ul class="sidebar-review">
+
+					<!-- single review -->
+					<li class="single-review">
+						<a href="single-post.html">
+							<div class="img">
+								<img alt="img" src="images/26-368x148.jpg">
+								<span class="overlay-link"></span>
+							</div>
+						</a>
+
+						<div class="review-text">
+							<a href="single-post.html" class="review-date"><span><i class="fa fa-calendar"></i>  October 31, 2015</span></a>
+							<a href="single-post.html" class="review-title">Vestibulum ut dignissim tellus</a>
+							<div class="review-rating"><b class="role-color"><i class="fa fa-trophy"></i> 4</b>/5</div>
+						</div>
+
+						<div class="clearfix"></div>
+					</li>
+
+					<!-- single review -->
+					<li class="single-review">
+						<a href="single-post.html">
+							<div class="img">
+								<img alt="img" src="images/19-368x148.jpg">
+								<span class="overlay-link"></span>
+							</div>
+						</a>
+
+						<div class="review-text">
+							<a href="single-post.html" class="review-date"><span><i class="fa fa-calendar"></i>  October 31, 2015</span></a>
+							<a href="single-post.html" class="review-title">Feugiat pharetra sapien ec vel turpis orc</a>
+							<div class="review-rating"><b class="adventure-color"><i class="fa fa-trophy"></i> 4</b>/5</div>
+						</div>
+
+						<div class="clearfix"></div>
+					</li>
+
+					<!-- single review -->
+					<li class="single-review">
+						<a href="single-post.html">
+							<div class="img">
+								<img alt="img" src="images/18-368x148.jpg">
+								<span class="overlay-link"></span>
+							</div>
+						</a>
+
+						<div class="review-text">
+							<a href="single-post.html" class="review-date"><span><i class="fa fa-calendar"></i>  October 31, 2015</span></a>
+							<a href="single-post.html" class="review-title">Aenean sed interdum quammus laoreet posuere pharet</a>
+							<div class="review-rating"><b class="shooter-color"><i class="fa fa-trophy"></i> 4</b>/5</div>
+						</div>
+
+						<div class="clearfix"></div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- footer middle column -->
+			<div class="col-lg-4">
+				<!-- content title -->
+				<div class="main-content-title">
+					<h3><i class="fa fa-rss"></i> instagram</h3>
+				</div>
+
+				<div class="instagram-wrapper">
+
+					<!-- single instagram image -->
+					<a href="index.html">
+						<img src="images/13715263_596813070502407_1646627604_n.jpg">
+					</a>
+
+					<!-- single instagram image -->
+					<a href="index.html">
+						<img src="images/13774591_1754065994811600_491978258_n.jpg">
+					</a>
+
+					<!-- single instagram image -->
+					<a href="index.html">
+						<img src="images/13706881_1118469068196774_1972721860_n.jpg">
+					</a>
+
+					<!-- single instagram image -->
+					<a href="index.html">
+						<img src="images/13739556_1158304420899822_1228846908_n.jpg">
+					</a>
+
+					<!-- single instagram image -->
+					<a href="index.html">
+						<img src="images/13694358_1042322892521584_1150638250_n.jpg">
+					</a>
+
+					<!-- single instagram image -->
+					<a href="index.html">
+						<img src="images/13767625_282321932129985_1522248215_n.jpg">
+					</a>
+
+					<!-- single instagram image -->
+					<a href="index.html">
+						<img src="images/13649165_621322221381957_97244884_n.jpg">
+					</a>
+
+					<!-- single instagram image -->
+					<a href="index.html">
+						<img src="images/13704373_1723626981230696_1287751506_n.jpg">
+					</a>
+
+					<!-- single instagram image -->
+					<a href="index.html">
+						<img src="images/13703208_1600088373622343_2027203245_n.jpg">
+					</a>
+				</div>
+			</div>
+
+			<!-- footer right column -->
+			<div class="col-lg-4">
+				<!-- content title -->
+				<div class="main-content-title">
+					<h3><i class="fa fa-rss"></i> match carousel</h3>
+				</div>
+
+				<!-- next match slider -->
+				<div id="footer-carousel" class="carousel slide" data-ride="carousel">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+
+				    	<!-- single match -->
+				      	<div class="item active">
+					        <div class="next-match-wrap">
+					        	<div class="team-image">
+					        		<img src="images/logo-helmet-150x124.jpg">
+					        	</div>
+					        	<div class="team-image">
+					        		<img src="images/cloud9-counterstrike-wallpaper-150x124.jpg">
+					        	</div>
+					   			<div class="clearfix"></div>
+					        	<div class="team-names">
+					        		<div class="home-team">
+					        			<span>skywarrior</span>
+					        		</div>
+					        		<div class="versus">
+					        			VS
+					        		</div>
+					        		<div class="away-team">
+					        			<span>cloud 9</span>
+					        		</div>
+					        		<div class="clearfix"></div>
+					        	</div>
+					        	<div class="match-date">
+					                   5 vs 5 - November 22, 2019 <span>11:45 am</span>
+					        	</div>
+					        </div>
+			    		</div>
+
+			    		<!-- single match -->
+					    <div class="item">
+					        <div class="next-match-wrap">
+					        	<div class="team-image">
+					        		<img src="images/lK1NsvDK-150x124.png">
+					        	</div>
+					        	<div class="team-image">
+					        		<img src="images/as-150x124.jpg">
+					        	</div>
+					   			<div class="clearfix"></div>
+					        	<div class="team-names">
+					        		<div class="home-team">
+					        			<span>flipsid3</span>
+					        		</div>
+					        		<div class="versus">
+					        			VS
+					        		</div>
+					        		<div class="away-team">
+					        			<span>natus vincere</span>
+					        		</div>
+					        		<div class="clearfix"></div>
+					        	</div>
+					        	<div class="match-date">
+					                  D2 Open Sept - September 4, 2021 <span>11:45 am</span>
+					        	</div>
+					        </div>
+					    </div>
+
+				    	<!-- single match -->
+				    	<div class="item">
+					        <div class="next-match-wrap">
+					        	<div class="team-image">
+					        		<img src="images/Avatar_Large-150x124.png">
+					        	</div>
+					        	<div class="team-image">
+					        		<img src="images/a25c884d950a539b9a54e2f79206ebe06237-150x124.jpg">
+					        	</div>
+					   			<div class="clearfix"></div>
+					        	<div class="team-names">
+					        		<div class="home-team">
+					        			<span>team gg</span>
+					        		</div>
+					        		<div class="versus">
+					        			VS
+					        		</div>
+					        		<div class="away-team">
+					        			<span>virtus pro</span>
+					        		</div>
+					        		<div class="clearfix"></div>
+					        	</div>
+					        	<div class="match-date">
+					                  WINNER TAKES IT ALL! #8 - April 22, 2019 <span>11:45 am</span>
+					        	</div>
+
+					        </div>
+				    	</div>
+				    </div>
+
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#footer-carousel" role="button" data-slide="prev">
+				      <span class="fa fa-chevron-left" aria-hidden="true"></span>
+				      <span class="sr-only">Previous</span>
+				    </a>
+				    <a class="right carousel-control" href="#footer-carousel" role="button" data-slide="next">
+				      <span class="fa fa-chevron-right" aria-hidden="true"></span>
+				      <span class="sr-only">Next</span>
+				    </a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="container-fluid copyright">
+		<div class="container">
+			<p>&copy; 2016 Made by <a href="http://skywarriorthemes.com/">Skywarrior Themes</a> </p>
+			<div class="footer-social">
+				<a href="index.html"><i class="fa fa-rss"></i></a>
+				<a href="index.html"><i class="fa fa-youtube"></i></a>
+				<a href="index.html"><i class="fa fa-twitch"></i></a>
+				<a href="index.html"><i class="fa fa-steam"></i></a>
+				<a href="index.html"><i class="fa fa-google-plus"></i></a>
+				<a href="index.html"><i class="fa fa-twitter"></i></a>
+				<a href="index.html"><i class="fa fa-facebook"></i></a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container back-to-top-wrapper">
+		<a href="#" class="back-to-top" id="scroll"></a>
+	</div>
+
+	<script src="js/jquery.webticker.min.js"></script>
+</body>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		var ticker = $('#webticker');
+		ticker.webTicker();
+
+		 // Back to top scroll script
+        $('#scroll').click(function(){
+    	$("html, body").animate({ scrollTop: 0 }, 900);
+    	return false;
+		});
+	});
+</script>
+
+</html>
