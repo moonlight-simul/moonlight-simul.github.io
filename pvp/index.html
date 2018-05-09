@@ -31,12 +31,12 @@
 	<!-- Fixes and mobile -->
 	<link href="css/bootstrap-fixes.css" rel="stylesheet">
 
-	<!-- jQuery -->
+	<script>
+		var SkipFirst = 0;
+	</script>
 	<script src="js/jquery-3.1.1.js"></script>
-	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	
-
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,6 +46,7 @@
 	<![endif]-->
 
 </head>
+
 <body class="single-match-page">
 
 	<!-- top header -->
@@ -161,11 +162,41 @@
 
 				<div><script async src="//client.uchat.io/uchat.js"></script>
 <u-chat room='moonlight' style="display:inline-block; width:630px; height:450px;"></u-chat></div>
+
 			</div>
+
+				<div class="tournament-prize">
+				<h2>우승자 보상</h2>
+				<table cellpadding="0" cellspacing="0" id="prizes-table">
+					<tbody>
+						<tr>
+							<th><img src="images/laurel.png"><span>순위</span></th>
+							<th><img src="images/cup.png"><span>보상</span></th>
+						</tr>
+						<tr>
+							<td class="firstrow"><span><img src="images/1st.png"> 우승</span></td>
+							<td class="trcell"><span class="tournament-prize">거래은량 10,000금 + 100,000전표 , 천살-구룡지존 등장식</span></td>
+						</tr>
+						<tr>
+							<td class="secondrow"><span><img src="images/2nd.png"> 준우승</span></td>
+							<td class="trcell"><span class="tournament-prize">거래은량 6,000금 + 60,000전표 , 천살-용전구소 등장식</span></td>
+						</tr>
+						<tr>
+							<td class="thirdrow"><span><img src="images/3rd.png"> 4강</span></td>
+							<td class="trcell"><span class="tournament-prize">거래은량 4,000금 + 40,000전표 , 천살-용전구소 등장식</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+							<div class="main-content-title">
+					<h3><i class="fa fa-bullhorn"></i> 대진표</h3>
+				</div>
+				<div>
+<iframe src="http://rostools.net/test/test2.html" frameborder="0" width="100%" height="750" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
 		</div>
-		
+
 	</section>
-	
+
 
 	<div class="container-fluid copyright">
 		<div class="container">
@@ -193,5 +224,4 @@
 		});
 	});
 </script>
-
 </html>
