@@ -1,0 +1,300 @@
+/*BOOTSTRAP FIXES*/
+
+body .navbar-toggle {
+	padding: 10px 9px;
+    margin-bottom: 0;
+    margin-top: 2px;
+    float: none;
+}
+
+body .container {
+	max-width: 100%;
+}
+
+/*MOBILE*/
+@media (max-width: 1800px) {
+	.landing-teams-wrapper {
+		display: none;
+	}
+
+	body.custom-profile .team-nav {
+		right: 250px;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+	body .container {
+		width: 980px!important;
+	}
+}
+
+@media (max-width: 1199px) {
+
+	.single-tournament {
+		width: 100%;
+	}
+
+	.stunning-pages-single a:before, .stunning-pages-single a:after {
+		display: none;
+	}
+
+	.join-tournaments .button-wrapper {
+		text-align: left;
+	}
+
+	body.custom-profile .team-nav, .team-nav {
+		position: static;
+	}
+
+	.team-nav li {
+		float: none;
+		width: 23%;
+		margin: 5px 1%;
+		border: 1px solid black;
+		display: inline-block;
+		margin-top: 20px;
+	}
+	
+	body.shop .related-products li {
+		margin-right: 5px!important;
+	}
+}
+
+@media (max-width: 991px) {
+
+
+	body .search-top {
+		display: none;
+	}
+
+	.content-slider a, .social-top {
+		display: none;
+	}	
+
+	.content-slider a:nth-child(1), .content-slider a:nth-child(2), .content-slider a:nth-child(3) {
+		display:block;
+	}
+
+	.video-text-wrapper {
+		left: 7%;
+	}
+
+	#header-menu {
+		position: absolute;
+    	z-index: 3;
+    	left: 0;
+    	background: #2a2a34;
+	}
+
+	.contact-menu #commentform {
+		width: 100%;
+	}
+
+	.dropdown .dropdown-menu {
+		display: none!important;
+	}
+
+	.open .dropdown-menu {
+		display: block!important;
+	}
+
+	.team-wars-menu {
+		min-width: 100%;
+		max-width: 100%;
+	}
+
+	.contact-menu .contact-map {
+		width: 100%;
+	}
+
+	.contact-menu .shortcodes-title, .contact-menu .menu-contact-form {
+		width: 100%;
+		text-align: center;
+	}
+
+	body.matches-page .single-match-wrapper {
+		width: 100%;
+	}
+
+	body.single-match-page .slider {
+		background: none;
+	}
+
+	body.single-match-page .slider:after {
+		display: none;
+	}
+
+	.team-a, .team-a .team-img, .team-a .team-img, .team-a > a span, .team-a .team-img .team-result, .slider .versus, .team-a .team-img .team-result span, .slider .tournament-meta {
+		position: static;
+	}
+
+	.team-a, .team-a .team-img {
+		width: 100%;
+	}
+
+	.team-a .team-img .team-result, .team-a > a span, .slider .versus, .slider .tournament-meta .tournament-info {
+		text-align: center;
+	}
+
+	.slider .versus {
+		background: none;
+    	box-shadow: none;
+   		border: none;
+	}
+
+	.slider .tournament-meta, .slider .tournament-meta .tournament-info {
+		left: 0;
+	}
+
+	body.single-team-page .main-slider .team-b {
+		left: 0;
+		right: 0;
+		margin: 20px auto;
+	}
+
+	body.single-team-page .main-slider .team-b .team-title {
+		width: 126px;
+    	left: 0;
+    	right: 0;
+    	display: inline-block;
+    	margin: 110px auto;
+	}
+
+	.create-account > img {
+		height: 400px;
+	}
+
+	.text-wrapper {
+		width: 80%;
+	}
+	
+	.team-wars-menu, .game-news-menu, #adventure-news, #shooter-news, #racing-news {
+		background-image: none;
+	}
+	
+	#adventure-news, #shooter-news, #racing-news, #teams, #tournaments, #matches, #members {
+		position: relative;
+		left: 0;
+		width: 100%;
+	}
+	
+	.team-wars-menu > li.tw-3 > ul.tw3-menu {
+		width: 100%;
+	}
+	
+	.team-wars-menu, .game-news-menu {
+		max-height: none;
+	}
+	
+	.tw3-menu {
+		min-height: inherit;
+	}
+	
+	.team-wars-menu .tw-1, .team-wars-menu .tw-2, .team-wars-menu .tw-3 {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	
+	#adventure-news > li, #racing-news > li, #teams > li, #shooter-news > li {
+		width: 93%;
+	}
+	
+	.contact-menu {
+		padding-right: 0!important;
+	}
+	
+	#teams > li, #header-menu .shop-menu .tw-1 > a {
+		width: 50%;
+	}
+}
+
+@media (max-width: 666px) {
+	.around-the-net .single-post, .around-the-net .post-small, .landing-free-updates .landing-teams-text, .forum-info ul.forum-sublist li, .custom-profile-pages p, .tournament-desc-left, .tournament-info .tournament-info-left, body.single-tournament-page .tournament-competitors .teams-list .single-team {
+		width: 100%;
+	}
+
+	.video-text-wrapper {
+		left: 0;
+	}
+
+	.content-slider a:nth-child(1), .content-slider a:nth-child(2) {
+		display:block;
+	}
+
+	.content-slider a:nth-child(3) {
+		display: none;
+	}
+
+	body.blog-style {
+		background-position-y: 200px;
+	}
+
+	.team-nav li {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.tournament-details ul li {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.tournament-desc-right, .tournament-info .tournament-info-right {
+		margin-left: 0;
+	}
+
+	.tournament-info .tournament-info-left {
+		float: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.content-slider a:nth-child(1) {
+		display:block;
+		width: 100%;
+	}
+
+	.content-slider a:nth-child(2) {
+		display: none;
+	}
+
+	.tournament-join {
+		position: relative;
+	    bottom: 0;
+	    right: 0;
+	    display: block;
+	}
+
+	body.landing .video-section .video-text-wrapper {
+		left: 7%;
+		top: 6%;
+	}
+
+	body.landing .video-section .video-text-wrapper h1 {
+		font-size: 48px;
+	}
+
+	body.landing .parallax-img-3 .text-wrapper h2, body.sports .parallax-img-3 .text-wrapper h2 {
+		font-size: 48px;
+	}	
+
+	.related-products .related-product-single .star-rating {
+		font-size: 8px;
+		max-width: 100%;
+		line-height: 18px;
+	}
+
+	.tournament-regulation > ul li a {
+		font-size: 8px;
+		padding: 20px 10px;
+	}
+
+	body.teams-page .teams-list .single-team {
+		width: 100%;
+	}
+	
+	body.shop .related-products li {
+		width: 100%!important;
+		margin-right: 0!important;
+	}
+}
