@@ -9,8 +9,75 @@
 		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.6.2.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+  $(
+  function(){
+   $('.data').mouseover(function(e) { // 마우스 오버시 좌표값을 받는다 -> e
+       $(this).mousemove(function (e) {
+           if ($(this).attr("l_magic") == "1") {
+               $('#layer #icon').empty().append($('<img/>').attr("src", "../img/2.png"));
+			   }
+			   else if ($(this).attr("l_magic") == "2") {
+               $('#layer #icon').empty().append($('<img/>').attr("src", "../img/3.png"));
+			   }
+			   else if ($(this).attr("l_magic") == "3") {
+               $('#layer #icon').empty().append($('<img/>').attr("src", "http://rostory.net/magicdb/img2/MAGIC_SHIELD.gif"));
+			   }
+			   else if ($(this).attr("l_magic") == "4") {
+               $('#layer #icon').empty().append($('<img/>').attr("src", "http://rostory.net/magicdb/img2/TAEGUK_SHIELD.gif"));
+			   }
+			   else
+           {
+                $('#layer #icon').empty().append($('<img/>').attr("src", "../img/1.png"));
+           }
+
+	$('#layer #name').empty().append($(this).text());//아이템이름
+	$('#layer #slot').empty().append($(this).attr("l_slot"));//장착
+	$('#layer #power').empty().append($(this).attr("l_power"));//파괴
+	$('#layer #limit').empty().append($(this).attr("l_limit"));//필요힘
+	$('#layer #r_m').empty().append($(this).attr("l_m"));//필요지력
+	$('#layer #r_d').empty().append($(this).attr("l_d"));//필요덱스
+	
+	$('#layer #conttent').empty().append($(this).attr("wr_name"));//부가설명
+	
+        var t=e.pageY+20;
+        var l=700;
+        $('#layer').css({"top":t, "left":l,"position":"absolute","opacity":"0,8" }).show();
+     }); 
+  });
+  $('.data').mouseout(function() {
+$('#layer').hide(); 
+  });
+  }   
+  );
+</script>
 	</head>
 	<body>
+	<div id="layer" class="layer">
+	  <div class="conttent">
+    <div align="center" id="icon"></div>
+  </div><br>
+  <div class="name">
+    <center><strong><span style="font-size: 10pt; color: #007eff;" id="name">아이템 이름 들어오는 곳</span> </strong></center>
+  </div>
+  <br>
+    <div class="slot">
+    <span style="font-size: 10pt; color: red;" id="slot">장착 (한손,양손)</span>
+  </div>  
+    <div class="r_d">
+    <span style="font-size: 10pt;" id="r_d">필요지력 들어오는 곳</span>
+  </div>
+    <div class="power">
+    <span style="font-size: 10pt; color: #008299;" id="power">무기파괴력 들어오는 곳</span>
+  </div>
+    <div class="limit">
+    <span style="font-size: 10pt; color: #008299;" id="limit">필요파괴력 들어오는 곳</span>
+  </div>
+    <div class="r_m">
+    <span style="font-size: 10pt; color: #008299;" id="r_m">필요지력 들어오는 곳</span>
+  </div>
+</div>
 <div id="wrap">
 		<div id="accordian">
 	<ul>
@@ -22,13 +89,13 @@
 			<font color="#008299"></font>
 			<font color="#A566FF"></font>
 			-->
-				<li><a href="1-1.html"><font color="#2F9D27">회복약</font></a></li>
-				<li><a href="1-2.html"><font color="#008299">고급 회복약</font></a></li>
-				<li><a href="1-3.html"><font color="#A566FF">정령의 가호</font></a></li>
-				<li><a href="1-4.html"><font color="#008299">불안정한 만능약</font></a></li>
-				<li><a href="1-5.html"><font color="#A566FF">만능약</font></a></li>
-				<li><a href="1-6.html"><font color="#A566FF">수면 폭탄</font></a></li>
-				<li><a href="1-7.html"><font color="#A566FF">폭약통</font></a></li>
+				<li><a href="../item/1-1.html"><font color="#2F9D27">회복약</font></a></li>
+				<li><a href="../item/1-2.html"><font color="#008299">고급 회복약</font></a></li>
+				<li><a href="../item/1-3.html"><font color="#A566FF">정령의 가호</font></a></li>
+				<li><a href="../item/1-4.html"><font color="#008299">불안정한 만능약</font></a></li>
+				<li><a href="../item/1-5.html"><font color="#A566FF">만능약</font></a></li>
+				<li><a href="../item/1-6.html"><font color="#A566FF">수면 폭탄</font></a></li>
+				<li><a href="../item/1-7.html"><font color="#A566FF">폭약통</font></a></li>
 			</ul>
 		</li>
 		<!-- we will keep this LI open by default -->
@@ -71,18 +138,18 @@
 </div>
 <div id="right">
 <div class="row">
-<span class="cell col1"><img src="../img/1.png">　<font color="#2F9D27">회복약</font></span>
+<span class="cell col1"><img src="../img/1.png">　<a style='cursor:pointer'><span class="data" l_magic="0" l_slot="30%의 생명력을 회복한다." l_power="[떠돌이 상인] 앤디" l_limit="[떠돌이 상인] 브루스" l_m="[제작] 슈테른 - 바네사" l_d="분해불가, 일부 지역 장착 제한 5개"><font color="#2F9D27">회복약</font></span></a></span>
 </div><br />
 <div class="row">
 <span class="cell col1">재료</span>
 </div>
 <div class="row">
-<span class="cell col1"><img src="../img/2.png">　<font color="#2F9D27">회복 버섯</font><br/><img src="../img/3.png">　마력 깃든 약병</span>
+<span class="cell col1"><img src="../img/2.png">　<a style='cursor:pointer'><span class="data" l_magic="1" l_slot="획득 시 귀속" l_power="[플래티넘 필드] 로나운의 영지" l_limit="[생활-식물] 슈사이어" l_m="[생활-식물] 아르데타인" l_d="분해불가"><font color="#2F9D27">회복 버섯</font></span></a></span><br/><img src="../img/3.png">　<a style='cursor:pointer'><span class="data" l_magic="2" l_slot="포션 계열 아이템의 가공 및 제작에 필요한 재료" l_power="[상점] 잡화 상인" l_limit="[상인] 슈테른-알렉사" l_m="[상인] 슈테른 - 레히트" l_d="분해불가">마력 깃든 약병</span></a></span>
 </div>
 </div>
 </div>
 
-	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
-		<script type="text/javascript" src="accordian.js"></script>
+	<script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../accordian.js"></script>
 	</body>
 </html>		

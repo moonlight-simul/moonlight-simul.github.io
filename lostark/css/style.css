@@ -180,8 +180,10 @@ text-align:left;
 	width: 500px;
 	}
 .row {display: table-row;}
-.cell {display: table-cell; padding: 0px;}
+.data {display: table-cell; padding: 0px;}
 .col1 {width: 32px; height: 25px;}
 .col2 {width: 32px;}
 .col3 {width: 10px;}
 .col4 {width: 10px;}
+
+.layer{display: none; width: 220px; height: 180px; border: 2px solid gray; background-color:#FFF; padding:10px; font-size:12px; line-height:15px; font-weight:100}
